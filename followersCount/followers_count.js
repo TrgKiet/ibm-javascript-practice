@@ -12,5 +12,12 @@ function checkCountValue() {
         alert("Your Instagram post gained 10 followers! Congratualations!");
     } else if (count === 20) {
         alert("Your Instagram post gained 20 followes! Keep it up!");
+    } else if (count === 0) {
+        alert("Followers count has been reset!")
     }
+}
+function resetCount() {
+    count = 0; // Set count back to 0
+    displayCount(); // Display count
+    checkCountValue(); // Check count value and display message
 }
